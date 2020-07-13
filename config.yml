@@ -33,8 +33,8 @@ indicators:
             - stoch_rsi
           hot: 20
           cold: 80
-          candle_period: 1h
-          period_count: 24
+          candle_period: 5m
+          period_count: 14
     momentum:
         - enabled: true
           alert_enabled: true
@@ -77,7 +77,7 @@ informants:
         - enabled: true
           signal:
             - ema
-          candle_period: 1h
+          candle_period: 1d
           period_count: 10
         - enabled: true
           signal:
