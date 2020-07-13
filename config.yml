@@ -3,11 +3,11 @@ settings:
     market_pairs:
         - ADA/BUSD
         - XLM/BUSD
-	    - RVN/BTC
-	    - BNB/BUSD
-	    - LINK/BUSD
-	    - RVN/BUSD
-	    - ETH/BUSD
+	- RVN/BTC
+	- BNB/BUSD
+	- LINK/BUSD
+	- RVN/BUSD
+	- ETH/BUSD
 
 exchanges:
     binance:
