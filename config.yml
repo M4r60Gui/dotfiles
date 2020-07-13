@@ -1,13 +1,7 @@
 settings:
     update_interval: 300
     market_pairs:
-        - ADA/BUSD
-        - XLM/BUSD
         - RVN/BTC
-        - BNB/BUSD
-        - LINK/BUSD
-        - RVN/BUSD
-        - ETH/BUSD
 
 exchanges:
     binance:
@@ -35,69 +29,6 @@ indicators:
           cold: 80
           candle_period: 5m
           period_count: 14
-    momentum:
-        - enabled: true
-          alert_enabled: true
-          alert_frequency: once
-          signal:
-            - momentum
-          hot: 0
-          cold: 0
-          candle_period: 1d
-          period_count: 10
-        - enabled: true
-          alert_enabled: false
-          alert_frequency: once
-          signal:
-            - momentum
-          hot: 0
-          cold: 0
-          candle_period: 1h
-          period_count: 12
-    macd:
-        - enabled: true
-          alert_enabled: true
-          alert_frequency: once
-          signal:
-            - macd
-          hot: 0
-          cold: 0
-          candle_period: 15m
-        - enabled: true
-          alert_enabled: false
-          alert_frequency: once
-          signal:
-            - macdsignal
-          hot: 0
-          cold: 0
-          candle_period: 15m
-
-informants:
-    ema:
-        - enabled: true
-          signal:
-            - ema
-          candle_period: 1d
-          period_count: 10
-        - enabled: true
-          signal:
-            - ema
-          candle_period: 1d
-          period_count: 30
-
-crossovers:
-    std_crossover:
-        - enabled: true
-          alert_enabled: true
-          alert_frequency: once
-          key_indicator: macd
-          key_indicator_index: 0
-          key_indicator_type: indicators
-          key_signal: macd
-          crossed_indicator: macd
-          crossed_indicator_index: 1
-          crossed_indicator_type: indicators
-          crossed_signal: macdsignal
 
 notifiers:
     telegram:
